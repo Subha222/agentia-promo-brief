@@ -1,0 +1,33 @@
+holdScore: 8
+reviewScore: 1
+holdOn:
+  - critical
+  - high
+reviewOn:
+  - medium
+  - low
+rules:
+  destructive-change:
+    enabled: true
+    severity: critical
+    weight: 10
+  permission-change:
+    enabled: true
+    severity: high
+    weight: 7
+  active-flow-change:
+    enabled: true
+    severity: medium
+    weight: 4
+  apex-without-test:
+    enabled: true
+    severity: high
+    weight: 6
+  test-not-ready:
+    enabled: true
+    severity: critical
+    weight: 10
+  test-results-missing:
+    enabled: true
+    severity: medium
+    weight: 2

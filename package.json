@@ -1,0 +1,25 @@
+{
+  "name": "agentia-promo-brief",
+  "version": "0.1.0",
+  "description": "Explainable deployment risk briefs for Agentia agents",
+  "type": "module",
+  "bin": {
+    "promo-brief": "./dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test test/analyze.test.ts",
+    "start": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.sf/
+.env
+.env.*
+*.brief.json
+*.brief.md

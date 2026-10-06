@@ -1,0 +1,35 @@
+{
+  "promotionId": "PROMO-1042",
+  "name": "Customer onboarding updates",
+  "source": "UAT",
+  "target": "Production",
+  "components": [
+    {
+      "type": "ApexClass",
+      "name": "OnboardingService",
+      "action": "modified"
+    },
+    {
+      "type": "ApexClass",
+      "name": "OnboardingServiceTest",
+      "action": "added"
+    },
+    {
+      "type": "Flow",
+      "name": "Customer_Onboarding",
+      "action": "modified",
+      "active": true
+    },
+    {
+      "type": "PermissionSet",
+      "name": "Customer_Success_Access",
+      "action": "modified"
+    }
+  ],
+  "tests": {
+    "status": "passed",
+    "passed": 128,
+    "failed": 0,
+    "total": 128
+  }
+}
